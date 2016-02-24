@@ -409,7 +409,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-device-width: 440px) { 
+@media screen and (max-device-width: 550px) { 
     h3 {
         margin: 10px 1em 20px 1em;
     }
@@ -430,6 +430,10 @@ footer a:hover {
     
     .skill-icon i {
     padding-top: 20px;
+    }
+
+    .project-img {
+        margin-bottom: 20px;
     }
 }
 
