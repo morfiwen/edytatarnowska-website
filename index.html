@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edyta Tarnowska</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Edyta Tarnowska | Web Design</title>
+    <meta name="description" content="Responsive Web Design, HTML5, CSS3, PSD to HTML - Edyta Tarnowska">
+    <meta name="author" content="Edyta Tarnowska">
    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/skeleton.css">
@@ -23,9 +23,9 @@
             </div>
             <nav class="eight columns menu">
                 <ul>
-                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,18 +39,18 @@
                     DESIGN</h1>
                 </div>
                 <div class="six columns">
-                    <p>Witaj! Nazywam się Edyta Tarnowska i&nbsp;jestem projektantem stron internetowych z Gliwic. Tworzę nowoczesne projekty, które są przyjemne dla oka i&nbsp;łatwe w użytkowaniu.</p>
+                    <p>Hello! My name is Edyta Tarnowska and I am a Web Designer from Gliwice, Poland. I'm passionate about building clean Websites that are beautiful to look at and easy to use.</p>
                 </div>
             </div>
             <div class="row">
-                <a class="button button-primary" href="#contact">Napisz do mnie</a>
+                <a class="button button-primary" href="#contact">Contact me</a>
             </div>
         </div>      
     </section>
 
     <section id="about" class="row">
         <div class="container">
-            <h3><span>Umiejętności</span></h3>
+            <h3><span>Skills</span></h3>
             <div class="row skills">
                 <div class="four columns">
                     <div class="skill-icon">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="four columns">
                     <div class="skill-icon">
-                        <i class="icon-heart"></i>
+                        <i class="icon-picture"></i>
                     </div>
                     <ul>       
                         <li>Photoshop</li>
@@ -88,68 +88,91 @@
         <div class="container">
             <h3><span>Portfolio</span></h3>
             <div class="row projects">
-                <figure class="one-half column category project-img">
-                    <img class="u-max-full-width" src="img/tree.jpg">
-                    <figcaption>
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, exercitationem!
-                            <p>
-                                <a href="#" target="_blank" title="View on Github"><i class="icon-github-circled"></i></a>
-                                <a href="#" target="_blank" title="Visit site"><i class="icon-link"></i></a>
-                            </p>
-                        </span>
-                    </figcaption>
-                </figure>
-                <figure class="one-half column category project-img">
-                    <img class="u-max-full-width" src="img/away.jpg">
-                    <figcaption>
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aut, doloribus quia molestias quae neque ullam! Officia eaque, nisi, asperiores id reprehenderit animi aliquid! Architecto.
-                            <p>
-                                <a href="#" target="_blank" title="View on Github"><i class="icon-github-circled"></i></a>
-                                <a href="#" target="_blank" title="Visit site"><i class="icon-link"></i></a>
-                            </p>
-                        </span>
-                    </figcaption>
-                </figure>
+                <div class="one-half column">
+                    <div class="project-img">
+                        <img class="u-max-full-width" src="img/portfolio-01-bootstrap.jpg">
+                        <div class="pic-description">
+                            <span>
+                                Sample Website<br>
+                                Responsive Web Design<br>
+                                Bootstrap
+                                <p>
+                                    <a href="https://github.com/morfiwen/bootstrap-landing-page-01" target="_blank" title="View on Github"><i class="icon-github-circled"></i></a>
+                                    <a href="http://morfiwen.github.io/bootstrap-landing-page-01/" target="_blank" title="Visit site"><i class="icon-link"></i></a>
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-half column">
+                    <div class="project-img">
+                        <img class="u-max-full-width" src="img/portfolio-03-psdtohtml.jpg">
+                        <div class="pic-description">
+                            <span>
+                                Sample Website<br>
+                                Responsive Web Design<br>
+                                PSD to HTML
+                                <p>
+                                    <a href="https://github.com/morfiwen/psd-to-html-halcyon" target="_blank" title="View on Github"><i class="icon-github-circled"></i></a>
+                                    <a href="http://morfiwen.github.io/psd-to-html-halcyon/" target="_blank" title="Visit site"><i class="icon-link"></i></a>
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="row">
         <div class="container">
-            <h3><span>Kontakt</span></h3>
+            <h3><span>Contact</span></h3>
 
-            <div class="row">
-                <form>
+            <!-- <div class="row">
+                <form action="sendmail.php" method="post">
                     <div class="row">
                         <div class="six columns offset-by-three">
-                            <label for="exampleEmailInput">Twój email</label>
-                            <input class="u-full-width" placeholder="email@gmail.com" id="exampleEmailInput" type="email">
+                            <label for="Email">Your email</label>
+                            <input class="u-full-width" placeholder="email@gmail.com" type="text" name="email" id="email">
                         </div>
                         </div>
                         <div class="row">
-                            <label for="exampleMessage">Wiadomość</label>
-                            <textarea class="six columns offset-by-three" placeholder="Witaj Edyta…" id="exampleMessage"></textarea>
+                            <label for="Message">Message</label>
+                            <textarea class="six columns offset-by-three" placeholder="Hello Edyta!" name="message" rows="20" cols="20" id="message"></textarea>
                         </div>
                         <div class="row">
-                            <input class="button button-primary" value="Wyślij" type="submit">
+                            <input class="button button-primary" type="submit" name="submit" value="Send">
                         </div>
-                </form>
-            </div>
+                </form> -->
+
+            <form>
+                <div class="row">
+                    <div class="six columns offset-by-three">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" placeholder="email@gmail.com" id="exampleEmailInput" type="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="six columns offset-by-three" placeholder="Hello Edyta!" id="exampleMessage"></textarea>
+                </div>
+                <div class="row">
+                    <input class="button button-primary" value="Send" type="submit">
+                </div>
+            </form>
             <div class="row">
-                <p>Lub napisz do mnie bezpośrednio na:</p>
+                <p>Or contact me directly:</p>
                 <p class="etmail"><a href="mailto:edyta.tarnowska@gmail.com">edyta.tarnowska@gmail.com</a></p>
-                <a href="#" target="_blank" title="Github"><i class="icon-github-circled"></i></a>
-                <a href="#" target="_blank" title="Facebook"><i class="icon-facebook-squared"></i></a>
-                <a href="#" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="https://github.com/morfiwen" target="_blank" title="Github"><i class="icon-github-circled"></i></a>
+                <a href="https://www.facebook.com/morfiwen" target="_blank" title="Facebook"><i class="icon-facebook-squared"></i></a>
+                <!-- <a href="#" target="_blank" title="Instagram"><i class="icon-instagram"></i></a> -->
             </div>
         </div>
     </section>
 
     <footer class="row">
         <div class="container">
-            <p>Copyright (c) 2016 - Edyta Tarnowska</p>
+            <p>Copyright (c) 2016 - <a href="#">Edyta Tarnowska</a></p>
         </div>
     </footer>
 
