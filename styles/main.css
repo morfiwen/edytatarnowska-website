@@ -163,7 +163,7 @@ i:hover {
 }
 
 .skill-icon i {
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -249,6 +249,7 @@ input[type="submit"].button-primary:hover {
 
 .menu a, #contact a {
     transition: all 0.5s ease-in-out;
+    font-weight: 400;
 }
 
 .menu a:hover, #contact a:hover {
@@ -263,7 +264,7 @@ input[type="submit"].button-primary:hover {
 .name p {
     font-size: 1.3em;
     letter-spacing: 0.1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     border-left: 1px solid #000;
     text-align: left;
     padding-left: 1em;
@@ -284,6 +285,11 @@ input[type="submit"].button-primary:hover {
 
 .skills {
     padding-top: 1.32em;
+}
+
+.skills li {
+    line-height: 1.8em;
+    letter-spacing: 0.08em;
 }
 
 .projects {
@@ -379,7 +385,7 @@ footer a:hover {
     color: #000;
 }
 
-@media screen and (max-device-width: 800px) { 
+@media screen and (max-width: 800px) { 
     h3 {
         margin: 10px 5em 20px 5em;
     }
@@ -388,7 +394,7 @@ footer a:hover {
         padding-bottom: 2em;
     }
     .name p {
-        border-top: 2px solid #000;
+        border-top: 1px solid #000;
         border-left: none;
         text-align: center;
         margin: 0;
@@ -409,7 +415,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-device-width: 550px) { 
+@media screen and (max-width: 550px) { 
     h3 {
         margin: 10px 1em 20px 1em;
     }
