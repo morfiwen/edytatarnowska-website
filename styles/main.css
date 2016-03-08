@@ -128,6 +128,14 @@ h3 {
     padding:  1em;
 }
 
+h4 {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+}
+
 a {
 	text-decoration: none;
     color: #fff;
@@ -320,6 +328,7 @@ input[type="submit"].button-primary:hover {
     top: 20%;
     left: 10%;
     width: 80%;
+    font-weight: 400;
 }
 
 .pic-description span {
@@ -328,6 +337,15 @@ input[type="submit"].button-primary:hover {
 
 .pic-description p {
     font-size: 1.5em;
+    text-align: center;
+}
+
+.pic-description p span {
+    font-size: 11px;
+    line-height: 1.1;
+    margin-top: 35px;
+    margin-left: -5px;
+    width: 50px;
 }
 
 .project-img:hover .pic-description {
