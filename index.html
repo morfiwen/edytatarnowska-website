@@ -6,22 +6,16 @@
     <title>Edyta Tarnowska | Web Design</title>
     <meta name="description" content="Responsive Web Design, HTML5, CSS3, PSD to HTML - Edyta Tarnowska">
     <meta name="author" content="Edyta Tarnowska">
-   
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/skeleton.css">
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="styles/fontello.css">
     <link rel="stylesheet" href="styles/main.css">
-
 </head>
 <body>
 
-    <header id="top-bar" class="row">
+    <header id="top-bar">
         <div class="container">
-            <div class="three columns logo">
-                <!-- <span><a href="#">Edyta Tarnowska</a></span> -->
-            </div>
-            <nav class="offset-by-three nine columns menu">
+            <nav class="menu">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -31,27 +25,25 @@
         </div>
     </header>
 
-    <section id="header" class="row">
+    <section id="header">
         <div class="container">
-            <div class="row name">
-                <div class="five columns">
+            <div class="header-content">
+                <div class="header-big">
                     <h1>WEB<br>DESIGN</h1>
                 </div>
-                <div class="six columns">
+                <div class="header-text">
                     <p>Hello! My name is Edyta Tarnowska and I&nbsp;am a Web Designer from Gliwice, Poland. I'm passionate about building clean Websites that are beautiful to look&nbsp;at and easy to use.</p>
                 </div>
             </div>
-            <div class="row">
-                <a class="button button-primary" href="#contact">Contact me</a>
-            </div>
+            <a class="button button-primary" href="#contact">Contact me</a>
         </div>      
     </section>
 
-    <section id="about" class="row">
+    <section id="about">
         <div class="container">
             <h3><span>Skills</span></h3>
-            <div class="row skills">
-                <div class="four columns">
+            <div class="skills">
+                <div class="skills-unit">
                     <div class="skill-icon">
                         <i class="icon-html5"></i>
                     </div>
@@ -60,7 +52,7 @@
                         <li>CSS3</li>
                     </ul>
                 </div>
-                <div class="four columns">
+                <div class="skills-unit">
                     <div class="skill-icon">
                         <i class="icon-mobile"></i>
                     </div>
@@ -70,7 +62,7 @@
                         <li>Skeleton</li>
                     </ul>
                 </div>
-                <div class="four columns">
+                <div class="skills-unit">
                     <div class="skill-icon">
                         <i class="icon-picture"></i>
                     </div>
@@ -83,13 +75,14 @@
         </div>
     </section>
 
-    <section id="portfolio" class="row">
+    <section id="portfolio">
         <div class="container">
             <h3><span>Portfolio</span></h3>
-            <div class="row projects">
-                <div class="one-half column">
+            <div class="projects">
+
+                <div class="project-unit">
                     <div class="project-img">
-                        <img class="u-max-full-width" src="img/portfolio-01-bootstrap.jpg">
+                        <img src="img/portfolio-01-bootstrap.jpg">
                         <div class="pic-description">
                             <span>
                                 <h4>Sample Website</h4>
@@ -103,9 +96,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="one-half column">
+
+                <div class="project-unit">
                     <div class="project-img">
-                        <img class="u-max-full-width" src="img/portfolio-03-psdtohtml.jpg">
+                        <img src="img/portfolio-03-psdtohtml.jpg">
                         <div class="pic-description">
                             <span>
                                 <h4>Sample Website</h4>
@@ -119,11 +113,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row projects">
-                <div class="one-half column">
+
+                <div class="project-unit">
                     <div class="project-img">
-                        <img class="u-max-full-width" src="img/portfolio-04-flexbox.jpg">
+                        <img src="img/portfolio-04-flexbox.jpg">
                         <div class="pic-description">
                             <span>
                                 <h4>Sample Website</h4>
@@ -137,22 +130,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="one-half column">
-                    <!-- <div class="project-img">
-                        <img class="u-max-full-width" src="img/portfolio-03-psdtohtml.jpg">
+
+                <div class="project-unit">
+                    <div class="project-img">
+                        <img src="img/portfolio-05-tilegrid.jpg">
                         <div class="pic-description">
                             <span>
-                                Sample Website<br>
+                                <h4>Sample Tile Grid Portfolio</h4>
                                 Responsive Web Design<br>
-                                PSD to HTML
+                                Flex box<br>
+                                JavaScript<br>
                                 <p>
-                                    <a href="https://github.com/morfiwen/psd-to-html-halcyon" target="_blank" title="View on Github"><i class="icon-github-circled"></i></a>
-                                    <a href="http://morfiwen.github.io/psd-to-html-halcyon/" target="_blank" title="Visit site"><i class="icon-link"></i></a>
+                                    <a href="https://github.com/morfiwen/tiles-grid-flexbox-practice" target="_blank" title="View on Github"><i class="icon-github-circled"><span>View on Github</span></i></a>
+                                    <a href="http://morfiwen.github.io/tiles-grid-flexbox-practice/" target="_blank" title="Visit site"><i class="icon-link"><span>Visit site</span></i></a>
                                 </p>
                             </span>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
+
+                <!-- <div class="project-unit empty">
+                </div> -->
+
             </div>
         </div>
     </section>
@@ -161,38 +160,29 @@
         <div class="container">
             <h3><span>Contact</span></h3>
 
-            <!-- <div class="row">
-                <form action="sendmail.php" method="post">
-                    <div class="row">
-                        <div class="six columns offset-by-three">
-                            <label for="Email">Your email</label>
-                            <input class="u-full-width" placeholder="email@gmail.com" type="text" name="email" id="email">
-                        </div>
-                        </div>
-                        <div class="row">
-                            <label for="Message">Message</label>
-                            <textarea class="six columns offset-by-three" placeholder="Hello Edyta!" name="message" rows="20" cols="20" id="message"></textarea>
-                        </div>
-                        <div class="row">
-                            <input class="button button-primary" type="submit" name="submit" value="Send">
-                        </div>
-                </form> -->
+            <form action="https://formspree.io/edyta.tarnowska@gmail.com" method="POST">
+                
+                <div class="form-info">
+                    <label><span>Your name</span>
+                    <input type="text" name="name">
+                    </label>
 
-            <form>
-                <div class="row">
-                    <div class="six columns offset-by-three">
-                        <label for="exampleEmailInput">Your email</label>
-                        <input class="u-full-width" placeholder="email@gmail.com" id="exampleEmailInput" type="email">
-                    </div>
+                    <label><span>Your email</span>
+                    <input type="email" name="_replyto">
+                    </label>
                 </div>
-                <div class="row">
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="six columns offset-by-three" placeholder="Hello Edyta!" id="exampleMessage"></textarea>
+
+                <div class="form-message">
+                    <label><span>Message</span>
+                    <textarea placeholder="Hello Edyta!" name="message"></textarea>
+                    </label>
                 </div>
-                <div class="row">
-                    <input class="button button-primary" value="Send" type="submit">
-                </div>
-            </form>
+
+                <input class="button button-send" type="submit" value="Send">
+            </form> 
+
+
+
             <div class="row">
                 <p>Or contact me directly:</p>
                 <p class="etmail"><a href="mailto:edyta.tarnowska@gmail.com">edyta.tarnowska@gmail.com</a></p>
@@ -205,7 +195,13 @@
 
     <footer class="row">
         <div class="container">
-            <p>Copyright (c) 2016 - <a href="#">Edyta Tarnowska</a></p>
+            <p>
+                Copyright (c) 
+                <script>
+                    var currentYear = new Date().getFullYear();
+                    document.write(currentYear > 2016 ? "2016-" + currentYear : "2016")
+                </script> 
+                - <a href="#">Edyta Tarnowska</a></p>
         </div>
     </footer>
 
