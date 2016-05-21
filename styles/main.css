@@ -126,14 +126,6 @@ h3 {
     padding:  1em;
 }
 
-h4 {
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 1.1em;
-    line-height: 1.3em;
-    letter-spacing: 0.1em;
-}
-
 a {
 	text-decoration: none;
     color: #fff;
@@ -143,6 +135,16 @@ a {
 
 a:hover {
     color: #fff;
+}
+
+h4 {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    margin-bottom: 5px;
 }
 
 strong {
